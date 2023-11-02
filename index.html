@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editora LeNabi</title>
     <link rel="stylesheet" href="style.css">
-    
+
     <script src="https://kit.fontawesome.com/a2288264db.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="shortcut icon" href="img-interface/lenabi 1.png" type="image/x-icon">
 </head>
 
 <body>
@@ -58,19 +61,19 @@
                     <div class="cards__wrapper">
                         <div class="card current--card">
                             <div class="card__image">
-                                <img src="img-interface/coração partido.webp" alt="" />
+                                <img src="img-interface/coração partido.webp" alt="" style="border-radius: 11px;" />
                             </div>
                         </div>
 
                         <div class="card next--card">
                             <div class="card__image">
-                                <img src="img-interface/felizes para nunca.webp" alt="" />
+                                <img src="img-interface/felizes para nunca.webp" alt="" style="border-radius: 11px;" />
                             </div>
                         </div>
 
                         <div class="card previous--card">
                             <div class="card__image">
-                                <img src="img-interface/maldição do amor.webp" alt="" />
+                                <img src="img-interface/maldição do amor.webp" alt="" style="border-radius: 11px;" />
                             </div>
                         </div>
                     </div>
@@ -131,7 +134,8 @@
                 </symbol>
             </svg>
         </section>
-        <section id="novidades">
+        <section id="lancamento-novidade">
+            <section id="novidades">
             <div class="circulos">
                 <div class="circuloUm"></div>
                 <div class="circuloDois"></div>
@@ -143,70 +147,186 @@
 
             <div class="divsaoUm"></div>
             <div class="divsaoDois"></div>
-  
+
         </section>
         <section id="lancamentos">
-                <div class="container-lancamento">
-                    <div id="slide">
-                        <div class="item" style="background-image: url(img-interface/hoje\ depois\ amanha.webp);">
-                            <div class="content">
-                                <div class="name">Hoje, depois, amanhã</div>
-                                <div class="data">00/00/00</div>
-                                <div class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. </div>
-                            </div>
+            <div class="container-lancamento">
+                <div id="slide">
+                    <div class="item" style="background-image: url(img-interface/hoje\ depois\ amanha.webp);">
+                        <div class="content">
+                            <div class="name">Hoje, depois, amanhã</div>
+                            <div class="data">00/00/00</div>
+                            <div class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore. </div>
                         </div>
-                        <div class="item" style="background-image: url(img-interface/irmaos\ Hawthorne.webp);">
-                            <div class="content">
-                                <div class="name">Os irmãos Hawthorne</div>
-                                <div class="data">00/00/00</div>
-                                <div class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. </div>
-                            </div>
-                        </div>
-                        <div class="item" style="background-image: url(img-interface/ventos\ uivantes.webp);">
-                            <div class="content">
-                                <div class="name">O morro dos ventos uivantes</div>
-                                <div class="data">00/00/00</div>
-                                 <div class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. </div>
-                            </div>
-                        </div>
-                        <div class="item" style="background-image: url(img-interface/hoje\ depois\ amanha.webp);">
-                            <div class="content">
-                                <div class="name">Hoje, depois, amanhã</div>
-                                <div class="data">00/00/00</div>
-                                <div class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. </div>
-                            </div>
-                        </div>
-                        <div class="item" style="background-image: url(img-interface/irmaos\ Hawthorne.webp);">
-                            <div class="content">
-                                <div class="name">Os irmãos Hawthorne</div>
-                                <div class="data">00/00/00</div>
-                                <div class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. </div>
-                            </div>
-                        </div>
-                        <div class="item" style="background-image: url(img-interface/ventos\ uivantes.webp);">
-                            <div class="content">
-                                <div class="name">O morro dos ventos uivantes</div>
-                                <div class="data">00/00/00</div>
-                                 <div class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. </div>
-                            </div>
-                        </div>
-                        
                     </div>
-                    <div class="buttons">
-                        <button id="prev"><i class="fa-solid fa-angles-left"></i></i></button>
-                        <button id="next"><i class="fa-solid fa-angles-right"></i></button>
+                    <div class="item" style="background-image: url(img-interface/irmaos\ Hawthorne.webp);">
+                        <div class="content">
+                            <div class="name">Os irmãos Hawthorne</div>
+                            <div class="data">00/00/00</div>
+                            <div class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore. </div>
+                        </div>
                     </div>
+                    <div class="item" style="background-image: url(img-interface/ventos\ uivantes.webp);">
+                        <div class="content">
+                            <div class="name">O morro dos ventos uivantes</div>
+                            <div class="data">00/00/00</div>
+                            <div class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore. </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(img-interface/hoje\ depois\ amanha.webp);">
+                        <div class="content">
+                            <div class="name">Hoje, depois, amanhã</div>
+                            <div class="data">00/00/00</div>
+                            <div class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore. </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(img-interface/irmaos\ Hawthorne.webp);">
+                        <div class="content">
+                            <div class="name">Os irmãos Hawthorne</div>
+                            <div class="data">00/00/00</div>
+                            <div class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore. </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(img-interface/ventos\ uivantes.webp);">
+                        <div class="content">
+                            <div class="name">O morro dos ventos uivantes</div>
+                            <div class="data">00/00/00</div>
+                            <div class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore. </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="buttons">
+                    <button id="prev"><i class="fa-solid fa-angles-left"></i></i></button>
+                    <button id="next"><i class="fa-solid fa-angles-right"></i></button>
                 </div>
             </div>
-        
-        </section>
-        
+            </div>
 
+        </section>
+        </section>  
+        <section id="Produtos">
+            <div class="conteudo">
+                <div class="tarja-tudo">
+                    <div class="linha linha-um"></div>
+                    <div class="tarja">
+                        <p>Veja nossos<br><span>Produtos</span></p>
+                    </div>
+                    <div class="linha linha-dois"></div>
+                </div>
+                <div class="texto-img">
+                    <div class="info-produtos">
+                        <div class="texto">
+                            <img src="img-interface/mdi_paper-outline.svg" alt="">
+                            <div class="detalhes">
+                                <h3>Lorem ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut labore. </p>
+                            </div>
+
+                        </div>
+                        <div class="texto">
+                            <img src="img-interface/ion_library-outline.svg" alt="">
+                            <div class="detalhes-library">
+                                <h3>Lorem ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut labore. </p>
+                            </div>
+
+                        </div>
+                        <div class="texto">
+                            <img src="img-interface/material-symbols_book-outline.svg" alt="">
+                            <div class="detalhes">
+                                <h3>Lorem ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut labore. </p>
+                            </div>
+                        </div>
+                        <div class="botao-linha">
+                            <div class="linha-botao"></div>
+                            <a href="#">Ver mais</a>
+                        </div>
+                    </div>
+
+                    <div class="scroll-img">
+                        <div class="div1">
+                            <a href=""><img src="img-interface/biblioteca meia noite.jpg" alt="" data-aos="fade-left"
+                                data-aos-duration="2000"></a>
+                            <a href=""><img src="img-interface/a cabana.jpg" alt="" data-aos="fade-left" data-aos-duration="2000"></a>
+
+                        </div>
+                        <div class="div2">
+                            <a href=""><img src="img-interface/daisy jones.jpg" alt="" data-aos="fade-left"
+                                data-aos-duration="2000"></a>
+
+                            <a href=""><img src="img-interface/ladrao de raios.jpg" alt="" data-aos="fade-left"
+                                data-aos-duration="2000"></a>
+
+
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="ScrollTrigger">
+
+            <div class="divisoria"></div>
+
+            <div class="container-scroll" id="scroll-container">
+                <h1><span class="primeiro">Quer ficar por dentro das
+                    <h1 class="young">novidades?</h1>
+                </span></h1>
+                <h1><span class="segundo">Participe do nosso
+                    <h1 class="young">NEWSLETTER</h1>
+                </span></h1>
+                <h3><span class="terceiro">Receba as novidades
+                    <h1 class="young">na palma da mão.</h1>
+                    <form><input type="text" placeholder="Escreva aqui">
+                        <button>Enviar</button></form>
+                </span></h3>
+        
+            </div>
+        </section>
     </main>
-    
-    
+    <footer>
+        <div class="container-footer">
+            <nav>
+                <div class="parte1">
+                    <a href="#">Produtos</a>
+                    <a href="#">Lançamentos</a>
+                    <a href="#">Pré-venda</a>
+                </div>
+                <div class="parte2">
+                    <a href="#">Favoritos</a>
+                    <a href="#">Sustentabilidade</a>
+                    <a href="#">Sobre nós</a>
+                </div>
+            </nav>
+            <div class="redes-sociais">
+                <a href=""><img src="img-interface/carbon_email.svg" alt=""></a>
+                <a href=""><img src="img-interface/uil_instagram.svg" alt=""></a>
+                <a href=""><img src="img-interface/simple-icons_x.svg" alt=""></a>
+            </div>
+            <div class="logo-footer">
+                <img src="img-interface/lenabi 1.png" alt="">
+                <h2>LeNabi</h2>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script> 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script>
     <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
